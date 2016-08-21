@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kPq-RH-lf1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016 Peter Balsamo All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jfh-iE-YMK">
+                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TheLight Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UF-ld-uYN">
+                    <rect key="frame" x="90" y="131" width="300" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="RPK-B9-pfs"/>
+                        <constraint firstAttribute="width" constant="300" id="yA1-yT-mTG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                    <color key="textColor" red="0.3058823645" green="0.76470589639999997" blue="0.78039217000000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bag.png" translatesAutoresizingMaskIntoConstraints="NO" id="gMc-nL-bOG">
+                    <rect key="frame" x="223" y="199" width="35" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="1zB-83-eW0"/>
+                        <constraint firstAttribute="width" constant="35" id="YrY-4x-KWW"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gMc-nL-bOG" firstAttribute="top" secondItem="kPq-RH-lf1" secondAttribute="top" constant="199" id="BAD-Gb-SkO"/>
+                <constraint firstItem="gMc-nL-bOG" firstAttribute="centerX" secondItem="0UF-ld-uYN" secondAttribute="centerX" id="DzC-TJ-dyA"/>
+                <constraint firstItem="gMc-nL-bOG" firstAttribute="top" secondItem="0UF-ld-uYN" secondAttribute="bottom" constant="20" id="LJb-l4-enk"/>
+                <constraint firstAttribute="bottom" secondItem="Jfh-iE-YMK" secondAttribute="bottom" constant="20" id="gwU-bF-dYZ"/>
+                <constraint firstAttribute="centerX" secondItem="Jfh-iE-YMK" secondAttribute="centerX" id="trg-eg-jYT"/>
+                <constraint firstItem="gMc-nL-bOG" firstAttribute="centerX" secondItem="Jfh-iE-YMK" secondAttribute="centerX" id="wuu-7Y-m6a"/>
+                <constraint firstItem="Jfh-iE-YMK" firstAttribute="leading" secondItem="kPq-RH-lf1" secondAttribute="leading" constant="20" symbolic="YES" id="wwJ-Sf-AdA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bag.png" width="92" height="160"/>
+    </resources>
+</document>

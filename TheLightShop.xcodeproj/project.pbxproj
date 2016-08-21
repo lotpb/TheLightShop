@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60399A1EA792AE31EA3456FF /* Pods_TheLightShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709E979685FDC6C6FF458BF3 /* Pods_TheLightShop.framework */; };
+		AF12C2471D3BCCC700C52E09 /* bag.png in Resources */ = {isa = PBXBuildFile; fileRef = AF12C2411D3BCCC700C52E09 /* bag.png */; };
+		AF12C2481D3BCCC700C52E09 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = AF12C2421D3BCCC700C52E09 /* card.png */; };
+		AF12C2491D3BCCC700C52E09 /* minus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF12C2431D3BCCC700C52E09 /* minus-button.png */; };
+		AF12C24A1D3BCCC700C52E09 /* plus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF12C2441D3BCCC700C52E09 /* plus-button.png */; };
+		AF12C24B1D3BCCC700C52E09 /* shopping-cart-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = AF12C2451D3BCCC700C52E09 /* shopping-cart-gray.png */; };
+		AF12C24C1D3BCCC700C52E09 /* shopping-cart.png in Resources */ = {isa = PBXBuildFile; fileRef = AF12C2461D3BCCC700C52E09 /* shopping-cart.png */; };
+		AF67DAEB1D3BC15F004D4186 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF67DAEA1D3BC15F004D4186 /* LaunchScreen.xib */; };
+		AF9622CD1D3BBEFF0011F7A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9622CC1D3BBEFF0011F7A4 /* Assets.xcassets */; };
+		AF9622DB1D3BBEFF0011F7A4 /* TheLightShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622DA1D3BBEFF0011F7A4 /* TheLightShopTests.swift */; };
+		AF9622E61D3BBF000011F7A4 /* TheLightShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622E51D3BBF000011F7A4 /* TheLightShopUITests.swift */; };
+		AF9623001D3BBF670011F7A4 /* AddressEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622F41D3BBF670011F7A4 /* AddressEntryTableViewController.swift */; };
+		AF9623011D3BBF670011F7A4 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622F51D3BBF670011F7A4 /* CartTableViewCell.swift */; };
+		AF9623021D3BBF670011F7A4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622F61D3BBF670011F7A4 /* CartViewController.swift */; };
+		AF9623031D3BBF670011F7A4 /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622F71D3BBF670011F7A4 /* CollectionsViewController.swift */; };
+		AF9623041D3BBF670011F7A4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622F81D3BBF670011F7A4 /* CollectionViewCell.swift */; };
+		AF9623051D3BBF670011F7A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622F91D3BBF670011F7A4 /* Constants.swift */; };
+		AF9623061D3BBF670011F7A4 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622FA1D3BBF670011F7A4 /* CustomTableCell.swift */; };
+		AF9623071D3BBF670011F7A4 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622FB1D3BBF670011F7A4 /* PaymentViewController.swift */; };
+		AF9623081D3BBF670011F7A4 /* ProductCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622FC1D3BBF670011F7A4 /* ProductCollectionController.swift */; };
+		AF9623091D3BBF670011F7A4 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622FD1D3BBF670011F7A4 /* ProductDetailViewController.swift */; };
+		AF96230A1D3BBF670011F7A4 /* ShippingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622FE1D3BBF670011F7A4 /* ShippingTableViewController.swift */; };
+		AF96230B1D3BBF670011F7A4 /* SnaphotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9622FF1D3BBF670011F7A4 /* SnaphotController.swift */; };
+		AF9623161D3BBF810011F7A4 /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96230C1D3BBF810011F7A4 /* AlertDialog.swift */; };
+		AF9623171D3BBF810011F7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96230D1D3BBF810011F7A4 /* AppDelegate.swift */; };
+		AF9623181D3BBF810011F7A4 /* ContinueButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96230E1D3BBF810011F7A4 /* ContinueButtonTableViewCell.swift */; };
+		AF9623191D3BBF810011F7A4 /* DataEntryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96230F1D3BBF810011F7A4 /* DataEntryTextField.swift */; };
+		AF96231A1D3BBF810011F7A4 /* ProductsLoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9623101D3BBF810011F7A4 /* ProductsLoadMoreTableViewCell.swift */; };
+		AF96231B1D3BBF810011F7A4 /* ScanButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9623111D3BBF810011F7A4 /* ScanButtonTableViewCell.swift */; };
+		AF96231C1D3BBF810011F7A4 /* ShippingMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9623121D3BBF810011F7A4 /* ShippingMethodTableViewCell.swift */; };
+		AF96231D1D3BBF810011F7A4 /* String+Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9623131D3BBF810011F7A4 /* String+Numeric.swift */; };
+		AF96231E1D3BBF810011F7A4 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9623141D3BBF810011F7A4 /* SwitchTableViewCell.swift */; };
+		AF96231F1D3BBF810011F7A4 /* TextEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9623151D3BBF810011F7A4 /* TextEntryTableViewCell.swift */; };
+		AFDF3DDD1D3BC60C003FDB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDF3DDB1D3BC60C003FDB20 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF9622D71D3BBEFF0011F7A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF9622BA1D3BBEFF0011F7A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF9622C11D3BBEFF0011F7A4;
+			remoteInfo = TheLightShop;
+		};
+		AF9622E21D3BBEFF0011F7A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF9622BA1D3BBEFF0011F7A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF9622C11D3BBEFF0011F7A4;
+			remoteInfo = TheLightShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C2F531DDB55C9AE5F9356D4 /* Pods-TheLightShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheLightShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheLightShop/Pods-TheLightShop.release.xcconfig"; sourceTree = "<group>"; };
+		709E979685FDC6C6FF458BF3 /* Pods_TheLightShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheLightShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C18ADC6A99294CB4DA2134 /* Pods_TheLightShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheLightShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79800F206C4B0389C638A1D5 /* Pods-TheLightShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheLightShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheLightShop/Pods-TheLightShop.debug.xcconfig"; sourceTree = "<group>"; };
+		AF12C2411D3BCCC700C52E09 /* bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bag.png; sourceTree = "<group>"; };
+		AF12C2421D3BCCC700C52E09 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
+		AF12C2431D3BCCC700C52E09 /* minus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus-button.png"; sourceTree = "<group>"; };
+		AF12C2441D3BCCC700C52E09 /* plus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-button.png"; sourceTree = "<group>"; };
+		AF12C2451D3BCCC700C52E09 /* shopping-cart-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart-gray.png"; sourceTree = "<group>"; };
+		AF12C2461D3BCCC700C52E09 /* shopping-cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart.png"; sourceTree = "<group>"; };
+		AF67DAEA1D3BC15F004D4186 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		AF9622C21D3BBEFF0011F7A4 /* TheLightShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLightShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9622CC1D3BBEFF0011F7A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF9622D11D3BBEFF0011F7A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9622D61D3BBEFF0011F7A4 /* TheLightShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheLightShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9622DA1D3BBEFF0011F7A4 /* TheLightShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLightShopTests.swift; sourceTree = "<group>"; };
+		AF9622DC1D3BBEFF0011F7A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9622E11D3BBEFF0011F7A4 /* TheLightShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheLightShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9622E51D3BBF000011F7A4 /* TheLightShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLightShopUITests.swift; sourceTree = "<group>"; };
+		AF9622E71D3BBF000011F7A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9622F31D3BBF660011F7A4 /* TheLightShop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheLightShop-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF9622F41D3BBF670011F7A4 /* AddressEntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressEntryTableViewController.swift; sourceTree = "<group>"; };
+		AF9622F51D3BBF670011F7A4 /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		AF9622F61D3BBF670011F7A4 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		AF9622F71D3BBF670011F7A4 /* CollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		AF9622F81D3BBF670011F7A4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AF9622F91D3BBF670011F7A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF9622FA1D3BBF670011F7A4 /* CustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		AF9622FB1D3BBF670011F7A4 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		AF9622FC1D3BBF670011F7A4 /* ProductCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionController.swift; sourceTree = "<group>"; };
+		AF9622FD1D3BBF670011F7A4 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		AF9622FE1D3BBF670011F7A4 /* ShippingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingTableViewController.swift; sourceTree = "<group>"; };
+		AF9622FF1D3BBF670011F7A4 /* SnaphotController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnaphotController.swift; sourceTree = "<group>"; };
+		AF96230C1D3BBF810011F7A4 /* AlertDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialog.swift; sourceTree = "<group>"; };
+		AF96230D1D3BBF810011F7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF96230E1D3BBF810011F7A4 /* ContinueButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueButtonTableViewCell.swift; sourceTree = "<group>"; };
+		AF96230F1D3BBF810011F7A4 /* DataEntryTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEntryTextField.swift; sourceTree = "<group>"; };
+		AF9623101D3BBF810011F7A4 /* ProductsLoadMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsLoadMoreTableViewCell.swift; sourceTree = "<group>"; };
+		AF9623111D3BBF810011F7A4 /* ScanButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanButtonTableViewCell.swift; sourceTree = "<group>"; };
+		AF9623121D3BBF810011F7A4 /* ShippingMethodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingMethodTableViewCell.swift; sourceTree = "<group>"; };
+		AF9623131D3BBF810011F7A4 /* String+Numeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Numeric.swift"; sourceTree = "<group>"; };
+		AF9623141D3BBF810011F7A4 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		AF9623151D3BBF810011F7A4 /* TextEntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEntryTableViewCell.swift; sourceTree = "<group>"; };
+		AFDF3DDC1D3BC60C003FDB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E28B5827EF5520B2074D1D65 /* Pods_TheLightShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheLightShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF9622BF1D3BBEFF0011F7A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60399A1EA792AE31EA3456FF /* Pods_TheLightShop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9622D31D3BBEFF0011F7A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9622DE1D3BBEFF0011F7A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		686C32596C52BAB5B4953212 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79800F206C4B0389C638A1D5 /* Pods-TheLightShop.debug.xcconfig */,
+				4C2F531DDB55C9AE5F9356D4 /* Pods-TheLightShop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF12C24D1D3BCD1A00C52E09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF9622FF1D3BBF670011F7A4 /* SnaphotController.swift */,
+				AF9622F41D3BBF670011F7A4 /* AddressEntryTableViewController.swift */,
+				AF9622F61D3BBF670011F7A4 /* CartViewController.swift */,
+				AF9622F71D3BBF670011F7A4 /* CollectionsViewController.swift */,
+				AF9622FB1D3BBF670011F7A4 /* PaymentViewController.swift */,
+				AF9622FC1D3BBF670011F7A4 /* ProductCollectionController.swift */,
+				AF9622FD1D3BBF670011F7A4 /* ProductDetailViewController.swift */,
+				AF9622FE1D3BBF670011F7A4 /* ShippingTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AF12C24E1D3BCDBD00C52E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF9622F51D3BBF670011F7A4 /* CartTableViewCell.swift */,
+				AF9622F81D3BBF670011F7A4 /* CollectionViewCell.swift */,
+				AF9622FA1D3BBF670011F7A4 /* CustomTableCell.swift */,
+				AF9623151D3BBF810011F7A4 /* TextEntryTableViewCell.swift */,
+				AF9623111D3BBF810011F7A4 /* ScanButtonTableViewCell.swift */,
+				AF9623121D3BBF810011F7A4 /* ShippingMethodTableViewCell.swift */,
+				AF9623141D3BBF810011F7A4 /* SwitchTableViewCell.swift */,
+				AF96230E1D3BBF810011F7A4 /* ContinueButtonTableViewCell.swift */,
+				AF9623101D3BBF810011F7A4 /* ProductsLoadMoreTableViewCell.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF9622B91D3BBEFF0011F7A4 = {
+			isa = PBXGroup;
+			children = (
+				AF9622C41D3BBEFF0011F7A4 /* TheLightShop */,
+				AF9622D91D3BBEFF0011F7A4 /* TheLightShopTests */,
+				AF9622E41D3BBEFF0011F7A4 /* TheLightShopUITests */,
+				AF9622C31D3BBEFF0011F7A4 /* Products */,
+				686C32596C52BAB5B4953212 /* Pods */,
+				E3EC54336DB5E9B2E7BE8553 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF9622C31D3BBEFF0011F7A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF9622C21D3BBEFF0011F7A4 /* TheLightShop.app */,
+				AF9622D61D3BBEFF0011F7A4 /* TheLightShopTests.xctest */,
+				AF9622E11D3BBEFF0011F7A4 /* TheLightShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF9622C41D3BBEFF0011F7A4 /* TheLightShop */ = {
+			isa = PBXGroup;
+			children = (
+				AF96230D1D3BBF810011F7A4 /* AppDelegate.swift */,
+				AF9622F91D3BBF670011F7A4 /* Constants.swift */,
+				AFDF3DDB1D3BC60C003FDB20 /* Main.storyboard */,
+				AF67DAEA1D3BC15F004D4186 /* LaunchScreen.xib */,
+				AF9622CC1D3BBEFF0011F7A4 /* Assets.xcassets */,
+				AF12C24D1D3BCD1A00C52E09 /* Controllers */,
+				AF12C24E1D3BCDBD00C52E09 /* Model */,
+				AF96230C1D3BBF810011F7A4 /* AlertDialog.swift */,
+				AF96230F1D3BBF810011F7A4 /* DataEntryTextField.swift */,
+				AF9623131D3BBF810011F7A4 /* String+Numeric.swift */,
+				AF12C2411D3BCCC700C52E09 /* bag.png */,
+				AF12C2421D3BCCC700C52E09 /* card.png */,
+				AF12C2431D3BCCC700C52E09 /* minus-button.png */,
+				AF12C2441D3BCCC700C52E09 /* plus-button.png */,
+				AF12C2451D3BCCC700C52E09 /* shopping-cart-gray.png */,
+				AF12C2461D3BCCC700C52E09 /* shopping-cart.png */,
+				AF9622D11D3BBEFF0011F7A4 /* Info.plist */,
+				AF9622F31D3BBF660011F7A4 /* TheLightShop-Bridging-Header.h */,
+			);
+			path = TheLightShop;
+			sourceTree = "<group>";
+		};
+		AF9622D91D3BBEFF0011F7A4 /* TheLightShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF9622DA1D3BBEFF0011F7A4 /* TheLightShopTests.swift */,
+				AF9622DC1D3BBEFF0011F7A4 /* Info.plist */,
+			);
+			path = TheLightShopTests;
+			sourceTree = "<group>";
+		};
+		AF9622E41D3BBEFF0011F7A4 /* TheLightShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF9622E51D3BBF000011F7A4 /* TheLightShopUITests.swift */,
+				AF9622E71D3BBF000011F7A4 /* Info.plist */,
+			);
+			path = TheLightShopUITests;
+			sourceTree = "<group>";
+		};
+		E3EC54336DB5E9B2E7BE8553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				709E979685FDC6C6FF458BF3 /* Pods_TheLightShop.framework */,
+				E28B5827EF5520B2074D1D65 /* Pods_TheLightShopTests.framework */,
+				72C18ADC6A99294CB4DA2134 /* Pods_TheLightShopUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF9622C11D3BBEFF0011F7A4 /* TheLightShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF9622EA1D3BBF000011F7A4 /* Build configuration list for PBXNativeTarget "TheLightShop" */;
+			buildPhases = (
+				9E05C7BC162631AA8FF87AC7 /* [CP] Check Pods Manifest.lock */,
+				AF9622BE1D3BBEFF0011F7A4 /* Sources */,
+				AF9622BF1D3BBEFF0011F7A4 /* Frameworks */,
+				AF9622C01D3BBEFF0011F7A4 /* Resources */,
+				40CF3329AD7917E53396263D /* [CP] Embed Pods Frameworks */,
+				F2E6D8426D6F99907B4553B0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheLightShop;
+			productName = TheLightShop;
+			productReference = AF9622C21D3BBEFF0011F7A4 /* TheLightShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF9622D51D3BBEFF0011F7A4 /* TheLightShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF9622ED1D3BBF000011F7A4 /* Build configuration list for PBXNativeTarget "TheLightShopTests" */;
+			buildPhases = (
+				9131D3E212634373A6B246B5 /* [CP] Check Pods Manifest.lock */,
+				AF9622D21D3BBEFF0011F7A4 /* Sources */,
+				AF9622D31D3BBEFF0011F7A4 /* Frameworks */,
+				AF9622D41D3BBEFF0011F7A4 /* Resources */,
+				87675B5B3EB4C467C21A1F0F /* [CP] Embed Pods Frameworks */,
+				C411DABEBAF1102F6B4C8FA0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF9622D81D3BBEFF0011F7A4 /* PBXTargetDependency */,
+			);
+			name = TheLightShopTests;
+			productName = TheLightShopTests;
+			productReference = AF9622D61D3BBEFF0011F7A4 /* TheLightShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF9622E01D3BBEFF0011F7A4 /* TheLightShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF9622F01D3BBF000011F7A4 /* Build configuration list for PBXNativeTarget "TheLightShopUITests" */;
+			buildPhases = (
+				1801E8522009EF7B596EE14D /* [CP] Check Pods Manifest.lock */,
+				AF9622DD1D3BBEFF0011F7A4 /* Sources */,
+				AF9622DE1D3BBEFF0011F7A4 /* Frameworks */,
+				AF9622DF1D3BBEFF0011F7A4 /* Resources */,
+				BF344996C38797870A190BA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF9622E31D3BBEFF0011F7A4 /* PBXTargetDependency */,
+			);
+			name = TheLightShopUITests;
+			productName = TheLightShopUITests;
+			productReference = AF9622E11D3BBEFF0011F7A4 /* TheLightShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF9622BA1D3BBEFF0011F7A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Peter Balsamo";
+				TargetAttributes = {
+					AF9622C11D3BBEFF0011F7A4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YX8KSFWQDW;
+						DevelopmentTeamName = "Peter Balsamo (Personal Team)";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					AF9622D51D3BBEFF0011F7A4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YX8KSFWQDW;
+						DevelopmentTeamName = "Peter Balsamo (Personal Team)";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					AF9622E01D3BBEFF0011F7A4 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AF9622BD1D3BBEFF0011F7A4 /* Build configuration list for PBXProject "TheLightShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF9622B91D3BBEFF0011F7A4;
+			productRefGroup = AF9622C31D3BBEFF0011F7A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF9622C11D3BBEFF0011F7A4 /* TheLightShop */,
+				AF9622D51D3BBEFF0011F7A4 /* TheLightShopTests */,
+				AF9622E01D3BBEFF0011F7A4 /* TheLightShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF9622C01D3BBEFF0011F7A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF12C24B1D3BCCC700C52E09 /* shopping-cart-gray.png in Resources */,
+				AF12C2471D3BCCC700C52E09 /* bag.png in Resources */,
+				AF12C24C1D3BCCC700C52E09 /* shopping-cart.png in Resources */,
+				AF12C2481D3BCCC700C52E09 /* card.png in Resources */,
+				AF12C2491D3BCCC700C52E09 /* minus-button.png in Resources */,
+				AFDF3DDD1D3BC60C003FDB20 /* Main.storyboard in Resources */,
+				AF67DAEB1D3BC15F004D4186 /* LaunchScreen.xib in Resources */,
+				AF12C24A1D3BCCC700C52E09 /* plus-button.png in Resources */,
+				AF9622CD1D3BBEFF0011F7A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9622D41D3BBEFF0011F7A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9622DF1D3BBEFF0011F7A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1801E8522009EF7B596EE14D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40CF3329AD7917E53396263D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheLightShop/Pods-TheLightShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87675B5B3EB4C467C21A1F0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheLightShopTests/Pods-TheLightShopTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9131D3E212634373A6B246B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E05C7BC162631AA8FF87AC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF344996C38797870A190BA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheLightShopUITests/Pods-TheLightShopUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C411DABEBAF1102F6B4C8FA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheLightShopTests/Pods-TheLightShopTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E6D8426D6F99907B4553B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheLightShop/Pods-TheLightShop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF9622BE1D3BBEFF0011F7A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9623041D3BBF670011F7A4 /* CollectionViewCell.swift in Sources */,
+				AF9623031D3BBF670011F7A4 /* CollectionsViewController.swift in Sources */,
+				AF96231E1D3BBF810011F7A4 /* SwitchTableViewCell.swift in Sources */,
+				AF9623001D3BBF670011F7A4 /* AddressEntryTableViewController.swift in Sources */,
+				AF9623071D3BBF670011F7A4 /* PaymentViewController.swift in Sources */,
+				AF96231C1D3BBF810011F7A4 /* ShippingMethodTableViewCell.swift in Sources */,
+				AF9623171D3BBF810011F7A4 /* AppDelegate.swift in Sources */,
+				AF9623021D3BBF670011F7A4 /* CartViewController.swift in Sources */,
+				AF9623011D3BBF670011F7A4 /* CartTableViewCell.swift in Sources */,
+				AF96231A1D3BBF810011F7A4 /* ProductsLoadMoreTableViewCell.swift in Sources */,
+				AF96231B1D3BBF810011F7A4 /* ScanButtonTableViewCell.swift in Sources */,
+				AF9623161D3BBF810011F7A4 /* AlertDialog.swift in Sources */,
+				AF9623191D3BBF810011F7A4 /* DataEntryTextField.swift in Sources */,
+				AF96230A1D3BBF670011F7A4 /* ShippingTableViewController.swift in Sources */,
+				AF96230B1D3BBF670011F7A4 /* SnaphotController.swift in Sources */,
+				AF9623051D3BBF670011F7A4 /* Constants.swift in Sources */,
+				AF9623181D3BBF810011F7A4 /* ContinueButtonTableViewCell.swift in Sources */,
+				AF96231D1D3BBF810011F7A4 /* String+Numeric.swift in Sources */,
+				AF9623091D3BBF670011F7A4 /* ProductDetailViewController.swift in Sources */,
+				AF96231F1D3BBF810011F7A4 /* TextEntryTableViewCell.swift in Sources */,
+				AF9623061D3BBF670011F7A4 /* CustomTableCell.swift in Sources */,
+				AF9623081D3BBF670011F7A4 /* ProductCollectionController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9622D21D3BBEFF0011F7A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9622DB1D3BBEFF0011F7A4 /* TheLightShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9622DD1D3BBEFF0011F7A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9622E61D3BBF000011F7A4 /* TheLightShopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF9622D81D3BBEFF0011F7A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF9622C11D3BBEFF0011F7A4 /* TheLightShop */;
+			targetProxy = AF9622D71D3BBEFF0011F7A4 /* PBXContainerItemProxy */;
+		};
+		AF9622E31D3BBEFF0011F7A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF9622C11D3BBEFF0011F7A4 /* TheLightShop */;
+			targetProxy = AF9622E21D3BBEFF0011F7A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFDF3DDB1D3BC60C003FDB20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFDF3DDC1D3BC60C003FDB20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF9622E81D3BBF000011F7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF9622E91D3BBF000011F7A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF9622EB1D3BBF000011F7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79800F206C4B0389C638A1D5 /* Pods-TheLightShop.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TheLightShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PeterBalsamo.TheLightShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheLightShop/TheLightShop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AF9622EC1D3BBF000011F7A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C2F531DDB55C9AE5F9356D4 /* Pods-TheLightShop.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TheLightShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PeterBalsamo.TheLightShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheLightShop/TheLightShop-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AF9622EE1D3BBF000011F7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TheLightShopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PeterBalsamo.TheLightShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AF9622EF1D3BBF000011F7A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TheLightShopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PeterBalsamo.TheLightShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AF9622F11D3BBF000011F7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TheLightShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PeterBalsamo.TheLightShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AF9622F21D3BBF000011F7A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TheLightShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PeterBalsamo.TheLightShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF9622BD1D3BBEFF0011F7A4 /* Build configuration list for PBXProject "TheLightShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9622E81D3BBF000011F7A4 /* Debug */,
+				AF9622E91D3BBF000011F7A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF9622EA1D3BBF000011F7A4 /* Build configuration list for PBXNativeTarget "TheLightShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9622EB1D3BBF000011F7A4 /* Debug */,
+				AF9622EC1D3BBF000011F7A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF9622ED1D3BBF000011F7A4 /* Build configuration list for PBXNativeTarget "TheLightShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9622EE1D3BBF000011F7A4 /* Debug */,
+				AF9622EF1D3BBF000011F7A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF9622F01D3BBF000011F7A4 /* Build configuration list for PBXNativeTarget "TheLightShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9622F11D3BBF000011F7A4 /* Debug */,
+				AF9622F21D3BBF000011F7A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF9622BA1D3BBEFF0011F7A4 /* Project object */;
+}
